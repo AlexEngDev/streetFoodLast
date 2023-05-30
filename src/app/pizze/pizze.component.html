@@ -1,13 +1,9 @@
-<p>Pizze speciali:</p>
-
-<ul *ngFor="let pizza of receivedPizza">
-  <li>{{ pizza.nome }}</li>
-</ul>
+<h2>Pizze speciali:</h2>
 
 <div *ngFor="let pizza of receivedPizza" class="card" style="width: 18rem">
   <img class="card-img-top" [src]="pizza.immagine" alt="Card image cap" />
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
+    <h5 class="card-title">{{ pizza.nome }}</h5>
     <p class="card-text">
       Some quick example text to build on the card title and make up the bulk of
       the card's content.

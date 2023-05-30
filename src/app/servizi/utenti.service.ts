@@ -29,10 +29,9 @@ export class UtentiService {
         return utenteTrovato.username === username;
       }
     )
-
-    if(utente){
+      if(utente){
       return utente.role;
-    }else{
+     }else{
       return "Base";
     }
   }

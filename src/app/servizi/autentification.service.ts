@@ -7,7 +7,7 @@ import { UtentiService } from './utenti.service';
 export class AutentificationService {
   constructor(private userServ: UtentiService) { }
 
-  autorizzato: boolean = false;
+  //autorizzato: boolean = false;
 
   checkRole(){
     const roleUserLogged = this.userServ.getUserRole("Anna");
